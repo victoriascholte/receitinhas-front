@@ -1,0 +1,22 @@
+@import "colors";
+
+.button {
+  display: inline-block;
+  padding: 18px 36px;
+  border: 2px dashed black;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.8rem;
+  background-color: $medium-champagne;
+  color: black;
+  &.green {
+    background-color: green;
+  }
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
