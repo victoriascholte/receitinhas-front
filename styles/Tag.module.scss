@@ -1,0 +1,31 @@
+@import "colors";
+@import "mixins";
+
+.tag {
+  margin-right: 10px;
+  padding: 8px 24px;
+  border-radius: 20px;
+  color: white;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.mauve {
+  background-color: $mauve;
+}
+
+.babyBlue {
+  background-color: $babyBlue;
+}
+
+.salmonPink {
+  background-color: $salmonPink;
+}
+
+@include mobile() {
+  .tag {
+    padding: 4px 12px;
+    font-size: 1.2rem;
+  }
+}

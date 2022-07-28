@@ -7,6 +7,10 @@
   justify-content: space-between;
   padding: 20px 0;
 
+  .logo {
+    cursor: pointer;
+  }
+
   ul {
     display: flex;
     list-style: none;
@@ -14,12 +18,12 @@
     li {
       padding: 5px;
       margin-left: 35px;
-      font-size: 0.8rem;
-
+      font-size: 1.6rem;
       &:hover {
         font-weight: 500;
-        text-decoration: underline;
-        color: white;
+        text-decoration: dashed underline;
+        text-underline-offset: 6px;
+        color: black;
       }
     }
   }
@@ -28,5 +32,11 @@
 @include mobile() {
   .header {
     padding: 0 10px 20px;
+    li a {
+      padding: 0px;
+      margin-left: 5px;
+      font-size: 1rem;
+    }
   }
+
 }
