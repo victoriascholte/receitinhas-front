@@ -16,9 +16,9 @@ export default function Home() {
             <link rel='icon' href='/favicon.ico' />
         </Head>
 
-        <main className={styles.main}>
+        <main className={styles.main} >
             <Wrapper>
-                <Header></Header>
+                <Header page={'landingPage'}></Header>
                   <div className={styles.hero}>
                     <div className={styles.banner}>
                         <h1>Aprenda receitas saudáveis que cabem no bolso</h1>

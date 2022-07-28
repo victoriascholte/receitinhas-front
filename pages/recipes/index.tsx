@@ -1,7 +1,14 @@
+import Header from "../../components/Header";
+import Wrapper from "../../components/Wrapper";
+import List from "../../components/List";
+
 function Index() {
     return (
         <>
-            <h1>Aprenda receitas saudáveis que cabem no bolso</h1>
+            <Wrapper>
+                <Header></Header>
+                <List></List>
+            </Wrapper>
         </>
     )
 }
