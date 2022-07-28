@@ -21,6 +21,7 @@
 
 @include mobile() {
   .button {
-    width: 85%;
+    padding: 12px 24px;
+    font-size: 1.6rem;
   }
 }
