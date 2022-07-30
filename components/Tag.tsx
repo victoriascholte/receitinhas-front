@@ -16,7 +16,8 @@ function Tag(props: TagProps) {
                 ${props.backgroundColor === 'mauve' ? styles.mauve :
                     props.backgroundColor === 'deepSafron' ? styles.deepSafron :
                         props.backgroundColor === 'mediumChampagne' ? styles.mediumChampagne :
-                            props.backgroundColor === 'babyBlue' ? styles.babyBlue : styles.salmonPink}`}>
+                            props.backgroundColor === 'winterGreenDream' ? styles.winterGreenDream :
+                                props.backgroundColor === 'babyBlue' ? styles.babyBlue : styles.salmonPink}`}>
                 {props.text}
             </li>
         </>
