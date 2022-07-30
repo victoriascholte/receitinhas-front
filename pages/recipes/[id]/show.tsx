@@ -26,7 +26,7 @@ function Show(props: RecipeProps) {
 }
 
 export async function getServerSideProps({ params }) {
-    const res = await fetch("http://localhost:3000/api/recipes/"+ params.id + "/show", {
+    const res = await fetch("https://receitinhas-front.vercel.app/api/recipes/"+ params.id + "/show", {
         headers: {"Content-Type": "application/json"},
         method: "GET"
     })
