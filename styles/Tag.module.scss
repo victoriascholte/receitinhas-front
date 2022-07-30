@@ -35,6 +35,10 @@
   background-color: $winterGreenDream;
 }
 
+.mediumPurple {
+  background-color: $mediumPurple;
+}
+
 @include mobile() {
   .tag {
     padding: 4px 12px;
