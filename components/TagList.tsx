@@ -14,7 +14,7 @@ function TagList(props: TagListProps) {
                 <ul>
                     {props.categories.map((category, i) => {
                         return (
-                            <Tag key={i} backgroundColor={category.color} children={category.title}></Tag>
+                            <Tag key={i} backgroundColor={category.color} text={category.title}></Tag>
                         )
                     })}
                 </ul>

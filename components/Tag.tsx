@@ -4,7 +4,7 @@ import {text} from "stream/consumers";
 
 interface TagProps {
     backgroundColor: string
-    children: string
+    text: string
     key?: number
 }
 
@@ -17,7 +17,7 @@ function Tag(props: TagProps) {
                     props.backgroundColor === 'deepSafron' ? styles.deepSafron :
                         props.backgroundColor === 'mediumChampagne' ? styles.mediumChampagne :
                             props.backgroundColor === 'babyBlue' ? styles.babyBlue : styles.salmonPink}`}>
-                {props.children}
+                {props.text}
             </li>
         </>
     )
