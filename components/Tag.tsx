@@ -11,7 +11,7 @@ interface TagProps {
 function Tag(props: TagProps) {
     return (
         <>
-            <li
+            <li key={props.key}
                 className={`${styles.tag} 
                 ${props.backgroundColor === 'mauve' ? styles.mauve :
                     props.backgroundColor === 'deepSafron' ? styles.deepSafron :
