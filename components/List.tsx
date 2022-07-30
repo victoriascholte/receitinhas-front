@@ -1,41 +1,38 @@
 import styles from '../styles/List.module.scss'
 import Link from "next/link";
 import Tag from "./Tag";
+import Recipe from "../models/Recipe";
+import TagList from "./TagList";
 
-function List() {
+interface RecipesProps {
+    recipes: Recipe[]
+}
+
+function List(props: RecipesProps) {
+
+    function renderList() {
+        return props.recipes.map((recipe, i) => {
+            return (
+                <li key={i} className={styles.item}>
+                    <div>
+                        <h2>{recipe.title}</h2>
+                        <TagList age={recipe.age} categories={recipe.categories}></TagList>
+                    </div>
+                    <Link href={"/recipes/" + recipe._id + "/show"}>Ver receita</Link>
+                </li>
+            )
+        })
+    }
+
     return (
         <>
-            <ul className={styles.list}>
-                <li className={styles.item}>
-                    <div>
-                        <h2>Danoninho saudável</h2>
-                        <div className={styles.tags}>
-                            <ul>
-                                <Tag backgroundColor={'mauve'} children={'Lanches'}></Tag>
-                                <Tag backgroundColor={'babyBlue'} children={'Doces'}></Tag>
-                                <Tag backgroundColor={'salmonPink'} children={'Almoço'}></Tag>
-                            </ul>
-                            <span>A partir de 6 meses</span>
-                        </div>
-                    </div>
-                    <Link href={'#'}>Ver receita</Link>
-                </li>
-                <li className={styles.item}>
-                    <div>
-                        <h2>Sopa de Abóbora</h2>
-                        <div className={styles.tags}>
-                            <ul>
-                                <Tag backgroundColor={'mauve'} children={'Lanches'}></Tag>
-                                <Tag backgroundColor={'babyBlue'} children={'Doces'}></Tag>
-                                <Tag backgroundColor={'salmonPink'} children={'Almoço'}></Tag>
-                            </ul>
-                            <span>A partir de 6 meses</span>
-                        </div>
-                    </div>
-                    <Link href={'#'}>Ver receita</Link>
-                </li>
-            </ul>
+            {props.recipes?.length > 0 ?
+                <ul className={styles.list}>
+                    {renderList()}
+                </ul> : <>Não existem dados cadastrados</>
+            }
         </>
+
     )
 }
 

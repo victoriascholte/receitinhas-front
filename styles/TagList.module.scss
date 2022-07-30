@@ -1,0 +1,31 @@
+@import "mixins";
+
+.tags {
+  display: flex;
+  align-items: center;
+  ul {
+    display: flex;
+    margin-right: 20px;
+  }
+  span {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}
+
+@include mobile() {
+  .tags {
+    flex-direction: column;
+    margin: 20px 0;
+
+    ul {
+      order: 2;
+      margin: 10px 0 0;
+    }
+
+    span {
+      order: 1;
+    }
+  }
+}

@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Gopher](https://user-images.githubusercontent.com/19174364/181839343-25731cf9-9732-467b-9dbc-aa6b54d46b2f.png)
 
-## Getting Started
+# **Projeto Final | :cook: Receitinhas - {Reprograma}** :purple_heart:
 
-First, run the development server:
+Projeto de conclusão do curso de Desenvolvimento Back-end - Todas em Tech | On16 da [{reprograma}](https://www.reprograma.com.br/). 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Receitinhas é um livro de receitas online de alto valor nutritivo e baixo custo para crianças e bebês. O frontend do projeto foi criado utilizando o Next.js.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Site :desktop_computer: | [Backend](https://receitinhas.herokuapp.com/) :woman_technologist: | [Documentação](https://receitinhas.herokuapp.com/documentation) :page_facing_up: | [Apresentação](https://www.canva.com/design/DAFHPmLcpBM/Z6szgo6-SYJX6wCwxO3pew/view?utm_content=DAFHPmLcpBM&utm_campaign=designshare&utm_medium=link&utm_source=publishpresent) :art:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#####Páginas
 
-## Learn More
+- [x]  Home (Landing page)
+- [x]  Lista de receitas
+- [x]  Detalhes de uma receita
+- [x]  Modo de preparo
+- [x]  Idade recomendada
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#####Definições de UI
 
-## Deploy on Vercel
+- [x]  font-family: Poppins
+- [x]  Color palete:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+        cultured: #F5F5F5;
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+        maximumBluePurple: #B4A8EF;
+
+        mauve: #D1A6F7;
+
+        salmonPink: #FF999E;
+
+        babyBlue: #67C1E8;
+
+        deepSafron: #F79F48;
+
+        mediumChampagne: #FFe89F;
+
+
+
+Projeto criado por [Victoria Scholte](https://github.com/victoriascholte) com orientação da super prof. [Mayhhara F Lilian](https://github.com/mflilian)!  
+Agradecimentos especiais: André, por estar sempre comigo e me apoiando em tudo; Carol, Di, Maria e Cláudia, por cuidarem do Tito para eu poder estudar; Francisco, pela ajuda e paciência com o frontend; todas minhas colegas de turma, pela parceria; professoras e equipe da {reprograma}, pelos ensinamentos e oportunidade.

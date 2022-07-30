@@ -23,6 +23,14 @@
   background-color: $salmonPink;
 }
 
+.deepSafron {
+  background-color: $deepSafron;
+}
+
+.mediumChampagne {
+  background-color: $mediumChampagne;
+}
+
 @include mobile() {
   .tag {
     padding: 4px 12px;

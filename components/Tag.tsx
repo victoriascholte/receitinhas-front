@@ -5,6 +5,7 @@ import {text} from "stream/consumers";
 interface TagProps {
     backgroundColor: string
     children: string
+    key?: number
 }
 
 function Tag(props: TagProps) {
@@ -12,8 +13,10 @@ function Tag(props: TagProps) {
         <>
             <li
                 className={`${styles.tag} 
-                ${props.backgroundColor === 'mauve' ? styles.mauve : 
-                    props.backgroundColor === 'babyBlue' ? styles.babyBlue : styles.salmonPink}`}>
+                ${props.backgroundColor === 'mauve' ? styles.mauve :
+                    props.backgroundColor === 'deepSafron' ? styles.deepSafron :
+                        props.backgroundColor === 'mediumChampagne' ? styles.mediumChampagne :
+                            props.backgroundColor === 'babyBlue' ? styles.babyBlue : styles.salmonPink}`}>
                 {props.children}
             </li>
         </>
